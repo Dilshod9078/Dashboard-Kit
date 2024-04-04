@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Mulish", sans-serif;
+    background-color: #F7F8FC;
+    overflow: hidden;
+}
+
+.active{
+    background-color: #3F4049;
+    color: #DDE2FF;
+}
+.active::before{
+    content: "";
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    background-color: #DDE2FF;
+    left: 0;
+}
+.item:hover > .card-title {
+    color: #3751FF;
+}
+.item:hover > .card-bold {
+    color: #3751FF;
+}
